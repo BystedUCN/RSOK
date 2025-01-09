@@ -1,3 +1,26 @@
+/* Variables */
+
+:root {
+    --deepForest: #2E4600;
+    --fernLeaf: #588C42;
+    --freshMint: #82B56D;
+    --clearSky: #87CEEB;
+    --paleStone: #F5F1E4;
+    --mobileSmSpacer: 10px;
+    --mobileLrgSpacer: 25px;
+    --tinySpacer: 5px;
+    --smSpacer: 15px;
+    --medSpacer: 50px;
+    --lrgSpacer: 100px;
+}
+
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+/* general styling */
+
 * {
     box-sizing: border-box;
 }
