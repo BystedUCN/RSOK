@@ -50,6 +50,8 @@ main {
 
 .breadCrumbs {
     margin-bottom: 12px;
+    display: flex;
+    text-align: center;
 }
 
 h2 {
@@ -160,4 +162,62 @@ form input{
 .sponsorLogo {
     display: flex;
     justify-content: space-around;
+}
+
+
+
+.newsCard {
+    background: var(--paleStone);
+    padding: var(--mobileSmSpacer);
+    border-radius: 6px;
+    margin-bottom: var(--mobileLrgSpacer);
+}
+
+.newsCard p {
+    margin-bottom: var(--smSpacer);
+}
+
+.calender{
+    background: var(--fernLeaf);
+    border-radius: 6px;
+    padding: var(--mobileSmSpacer);
+    margin-bottom: var(--medSpacer);
+}
+.calender ul {
+    list-style: none;
+}
+
+.month{
+    text-align: center;
+}
+
+
+.weekdays {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.weekdays p {
+    margin: 0;
+}
+
+.days {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(7, 1fr);
+    justify-content: center;
+}
+
+.days p {
+    text-align: center;
+    margin: 0;
+    padding: var(--mobileSmSpacer);
+    border: 0.5px solid black;
+    border-radius: 6px;
+    background: var(--freshMint);
+}
+
+.days p:nth-child(1) {
+    grid-column: 3;
 }
