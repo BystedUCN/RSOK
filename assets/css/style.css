@@ -1,3 +1,8 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+
 /* Variables */
 
 :root {
@@ -14,23 +19,145 @@
     --lrgSpacer: 100px;
 }
 
-/* font */
-@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
-
 
 
 /* general styling */
 
 * {
     box-sizing: border-box;
+    font-family: "Epilogue", serif;
 }
 
 body{
     margin: 0;
 }
 
+main {
+    margin: 10px;
+}
+
 
 /* Mobil opsætning først */
-main .mobileNone {
+.mobileNone {
     display: none;
+}
+
+.breadCrumbs a {
+    color: hsl(0, 0%, 0%);
+    opacity: 90%;
+    font-size: 10px;
+}
+
+.breadCrumbs {
+    margin-bottom: 12px;
+}
+
+h2 {
+    font-size: 1rem;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 13px;
+    margin-top: 0;
+    margin-bottom: var(--medSpacer)
+}
+
+.infoCards {
+    background: var(--paleStone);
+    padding: var(--mobileSmSpacer);
+    border-radius: 6px;
+    margin-bottom: 25px;
+}
+
+h3 {
+    font-size: 14px;
+}
+
+.infoCards p {
+    font-weight: 300;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.button {
+    text-decoration: none;
+    font-size: 14px;
+    color: hsl(0, 0%, 0%);
+    background-color: var(--clearSky);
+    border-radius: 50px;
+    height: 38px;
+    width: 180px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.centeredHeader {
+    text-align: center;
+}
+
+.teamCards {
+    margin: var(--smSpacer);
+}
+
+.cards {
+    margin-bottom: var(--medSpacer);
+}
+
+.lessSpace p{
+    margin-bottom: var(--smSpacer);
+}
+
+.lessSpace .button {
+    margin-bottom: var(--medSpacer);
+}
+
+.newsletter {
+    background-color: var(--freshMint);
+    border-radius: 6px;
+padding: var(--smSpacer);
+}
+
+form{
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: var(--tinySpacer);
+}
+
+form input{
+    width: 270px;
+    height: 20px;
+    border-radius: 6px;
+    justify-content: center;
+    margin-bottom: var(--tinySpacer);
+    
+}
+
+.sponsor h2{
+    margin-top: var(--medSpacer);
+    justify-content: center;
+}
+
+.sponsor img {
+    height: auto;
+    width: 150px;
+}
+
+.sponsor a {
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+.sponsorLogo {
+    display: flex;
+    justify-content: space-around;
 }
