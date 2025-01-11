@@ -38,6 +38,131 @@ main {
 
 
 /* Mobil opsætning først */
+/* Her ligger CSS for vores navigationsbar */
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.headerLogo {
+    background: var(--fernLeaf);
+    height: 68px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header img {
+    width: 50px;
+    height: auto;
+    border-radius: 6px;
+}
+
+h1 {
+    font-size: 16px;
+    font-weight: 700;
+    color: black;
+    text-shadow: -4px 4px 4px var(--deepForest);
+    margin: 15px;
+}
+
+header a{
+    text-decoration: none;
+}
+
+nav {
+    background: var(--freshMint);
+    height: 32px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* justify-content: flex-end; */
+}
+
+.fa-bars {
+    font-size: 15px;
+    margin: 8.38px;
+}
+
+/**
+    Her gemmer vi checkboksen, så den lille checkboks ikke viser sig.
+*/
+
+input[type=checkbox] {
+    display: none;
+}
+
+/*  Vi vil ikke have at ul bliver vist når checkboksen ikke er tjekket, derfor vil vi sætte den til display none, vi laver en position absolout så den ligger sig i forhold til sit forældre element.*/
+
+.dropdown ul {
+    display: none;
+    position: absolute;
+    list-style: none;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown ul li {
+    padding: var(--smSpacer);
+    background-color: var(--freshMint);
+    border: .2px solid var(--fernLeaf);
+    border-radius: 6px;
+    width: 150px;
+}
+
+
+.dropdown ul li a {
+    color: inherit;
+    font-size: 12px;
+}
+
+.insideDropdown {
+    position: relative;
+}
+
+.insideDropdown:nth-child(1) {
+    display: inline-block;
+}
+
+.insideDropdown label {
+    font-size: 12px;
+}
+
+.insideDropdown ul {
+    position: absolute;
+    left: 134px;
+    top: -15px;
+}
+
+/**
+Nu targetter vi så input elementet med type=checkboks når checkboksen er chekced, det gør at vi kan ændre hvordan elementerne skal vises alt efter om den er checket af eller ej.
+
+Alt efter hvad vi gerne vil ændre bruger vi "altid" input[type=checkbox]:checked. ~ fortæller at det er en søskende til vores input.
+
+*/
+
+input[type=checkbox]:checked~ul {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Her er anden kode :P */
 .mobileNone {
     display: none;
 }
