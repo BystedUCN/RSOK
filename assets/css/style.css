@@ -150,18 +150,6 @@ input[type=checkbox]:checked~ul {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* Her er anden kode :P */
 .mobileNone {
     display: none;
@@ -345,4 +333,28 @@ form input{
 
 .days p:nth-child(1) {
     grid-column: 3;
+}
+
+
+/* Kodning for kontaktsiden */
+.contactHeader {
+    margin-top: var(--mobileLrgSpacer);
+}
+
+.contact{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.contactCards{
+    background-color: var(--paleStone);
+    border-radius: 6px;
+    margin: var(--tinySpacer);
+    text-align: center;
+}
+
+.contactCards p {
+    margin-bottom: 14px;
+    font-size: 11px;
+    line-height: 150%;
 }
