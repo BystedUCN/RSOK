@@ -392,3 +392,68 @@ form input{
 .signUp {
     margin-top: var(--medSpacer);
 }
+
+.headerImg {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.map {
+    font-size: 10px;
+    margin-bottom: var(--mobileLrgSpacer);
+}
+
+/* Footer Styling */
+footer {
+    background: var(--deepForest);
+    padding: var(--mobileSmSpacer);
+}
+
+footer a, p, h4 {
+    color: white;
+    margin: 0;
+    line-height: 150%;
+}
+
+footer h4 {
+    font-size: 10px;
+}
+
+footer a, p {
+    font-size: 8px;
+}
+.fa-facebook, .fa-square-instagram {
+    color: var(--clearSky);
+    font-size: 35px;
+    margin: var(--mobileSmSpacer);
+}
+
+footer img {
+    height: 35px;
+    width: auto;
+    border-radius: 6px;
+}
+
+.footerLink {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.footerLogo {
+    display: flex;
+    justify-content: center;
+}
+
+hr {
+    width: 140px;
+}
+
+.politics {
+    display: flex;
+    justify-content: center;
+}
+
+.politics a {
+    margin: var(--tinySpacer);
+}

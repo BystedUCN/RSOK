@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>O-kort</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
@@ -13,106 +12,117 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="headerLogo">
-          <a href="./index.html"><img src="./assets/img/logo.png" alt="Rold Skov OK logo"></a><a href="./index.html"><em><H1>Rold Skov Orienteringsklub</H1></em></a>
+      <div class="headerLogo">
+        <a href="./index.html"
+          ><img src="./assets/img/logo/logo.png" alt="Rold Skov OK logo" /></a
+        ><a href="./index.html"
+          ><em><h1>Rold Skov Orienteringsklub</h1></em></a
+        >
+      </div>
+      <nav>
+        <div class="dropdown">
+          <input type="checkbox" id="checkbox-burgerMenu" />
+          <label for="checkbox-burgerMenu"
+            ><i class="fa-solid fa-bars"></i
+          ></label>
+          <ul>
+            <li><a href="./news.html">Nyheder</a></li>
+            <li><a href="./newMember.html">Ny til O-Løb?</a></li>
+            <li>
+              <div class="insideDropdown">
+                <input type="checkbox" id="checkbox-teams" />
+                <label for="checkbox-teams">Hold ▼</label>
+                <ul>
+                  <li><a href="./teams.html">General træning</a></li>
+                  <li><a href="./family.html">Familie</a></li>
+                  <li><a href="./kidsAndTeens.html">Børn og unge</a></li>
+                  <li><a href="./adult.html">Voksne</a></li>
+                  <li><a href="./senior.html">Senior</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="./signUp.html">Indmeldelse</a></li>
+            <li>
+              <div class="insideDropdown">
+                <input type="checkbox" id="checkbox-praktiskInfo" />
+                <label for="checkbox-praktiskInfo">Praktisk info ▼</label>
+                <ul>
+                  <li><a href="./map.html">O-Kort</a></li>
+                  <li><a href="#">Startsteder</a></li>
+                  <li><a href="#">Fakta, konti, mv.</a></li>
+                  <li><a href="#">Banelægger instruks</a></li>
+                  <li><a href="#">Træningsløbskort</a></li>
+                  <li><a href="#">Find vej syd for skørping skole</a></li>
+                  <li><a href="#">Find vej deruda</a></li>
+                  <li><a href="#">Vedtægter</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="./contact.html">Kontakt</a></li>
+            <li>
+              <div class="insideDropdown">
+                <input type="checkbox" id="checkbox-medlemssider" />
+                <label for="checkbox-medlemssider">Medlemssider ▼</label>
+                <ul>
+                  <li><a href="#">Log ind</a></li>
+                  <li><a href="#">Referater</a></li>
+                  <li><a href="#">O-Teknisk træning</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
         </div>
-          <nav>
-            <div class="dropdown">
-              <input type="checkbox" id="checkbox-burgerMenu" />
-              <label for="checkbox-burgerMenu"><i class="fa-solid fa-bars"></i></label>
-              <ul>
-                <li><a href="./news.html">Nyheder</a></li>
-                <li><a href="./newMember.html">Ny til O-Løb?</a></li>
-                <li>
-                  <div class="insideDropdown">
-                    <input type="checkbox" id="checkbox-teams">
-                    <label for="checkbox-teams">Hold ▼</label>
-                    <ul>
-                      <li><a href="./teams.html">General træning</a></li>
-                      <li><a href="./family.html">Familie</a></li>
-                      <li><a href="./kidsAndTeens.html">Børn og unge</a></li>
-                      <li><a href="./adult.html">Voksne</a></li>
-                      <li><a href="./senior.html">Senior</a></li>
-                    </ul>
-                  </div>
-                  </li>
-                  <li><a href="./signUp.html">Indmeldelse</a></li>
-                  <li>
-                  <div class="insideDropdown">
-                    <input type="checkbox" id="checkbox-praktiskInfo">
-                    <label for="checkbox-praktiskInfo">Praktisk info ▼</label>
-                    <ul>
-                      <li><a href="./map.html">O-Kort</a></li>
-                      <li><a href="#">Startsteder</a></li>
-                      <li><a href="#">Fakta, konti, mv.</a></li>
-                      <li><a href="#">Banelægger instruks</a></li>
-                      <li><a href="#">Træningsløbskort</a></li>
-                      <li><a href="#">Find vej syd for skørping skole</a></li>
-                      <li><a href="#">Find vej deruda</a></li>
-                      <li><a href="#">Vedtægter</a></li>
-                    </ul>
-                  </div>
-                </li>
-                  <li><a href="./contact.html">Kontakt</a></li>
-                  <li>
-                    <div class="insideDropdown">
-                      <input type="checkbox" id="checkbox-medlemssider">
-                      <label for="checkbox-medlemssider">Medlemssider ▼</label>
-                      <ul>
-                        <li><a href="#">Log ind</a></li>
-                        <li><a href="#">Referater</a></li>
-                        <li><a href="#">O-Teknisk træning</a></li>
-                      </ul>
-                    </div>
-                  </li>
-              </ul>
-            </div>
-          </nav>
-        </header>
+      </nav>
+    </header>
     <main>
-        <div class="breadCrumbs">
-            <a href="#">Forside</a>
-            <p>></p>
-            <a href="#">Praktisk info</a>
-            <p>></p>
-            <a href="./map.html">O-kort</a>
+      <img
+        src="./assets/img/header/oMapHeaderImg.jpg"
+        alt="Billede af et orienteringskort"
+        class="headerImg"
+      />
+      <div class="breadCrumbs">
+        <a href="./index.html">Forside</a>
+        <p>></p>
+        <a href="#">Praktisk info</a>
+        <p>></p>
+        <a href="./map.html">O-Kort</a>
+      </div>
+      <section>
+        <p class="map">
+          <em
+            >Vores o-kort opdateres løbende, og vi har o-kort over mange områder
+            af Rold Skov foruden flere mindre private skove og offentlige
+            parker. Men også o-kort over både Skørping, Støvring og Terndrup,
+            som vi bruger til by-orientering.</em
+          >
+        </p>
+        <article>
+          <h2>O-kort</h2>
+          <p>
+            O-kort tegnes af erfarne orienteringsløbere, og vi anvender logiske
+            og let forståelige signaturer, som man meget hurtigt lærer at læse
+            og derved omsætte kort til naturen – og omvendt! Alt hvad der er
+            gult, er marker eller lysåbne områder, alt det blå handler om vand,
+            og sorte stiplede streger i forskellige tykkelser er skovveje og
+            stier. Jo tykkere streg – jo større sti. Det grønne på kortet
+            fortæller, hvor tæt skoven er, men ikke om det er løvskov eller
+            granskov. Det har vi jo ikke brug for at vide, men derimod hvor nemt
+            vi kan færdes i skoven. Så jo mørkere grøn farve – jo tættere at
+            færdes i. Vores o-kort opdateres løbende, og vi har o-kort over
+            mange områder af Rold Skov foruden flere mindre private skove og
+            offentlige parker. Men også o-kort over både Skørping, Støvring og
+            Terndrup, som vi bruger til by-orientering.
+          </p>
+          <div class="buttonContainer">
+            <a href="#" class="button">Tidligere O-Kort</a>
           </div>
-        <section>
-            <article>
-                <h2>O-kort</h2>
-                <p>Vores o-kort opdateres løbende, og vi har o-kort over mange områder af Rold Skov foruden flere mindre private
-                    skove og
-                    offentlige parker. Men også o-kort over både Skørping, Støvring og Terndrup, som vi bruger til
-                    by-orientering.
-        
-                    O-kort tegnes af erfarne orienteringsløbere, og vi anvender logiske og let forståelige signaturer, som man
-                    meget hurtigt
-                    lærer at læse og derved omsætte kort til naturen – og omvendt!
-                    Alt hvad der er gult, er marker eller lysåbne områder, alt det blå handler om vand, og sorte stiplede
-                    streger i
-                    forskellige tykkelser er skovveje og stier.
-                    Jo tykkere streg – jo større sti. Det grønne på kortet fortæller, hvor tæt skoven er, men ikke om det er
-                    løvskov eller
-                    granskov.
-                    Det har vi jo ikke brug for at vide, men derimod hvor nemt vi kan færdes i skoven. Så jo mørkere grøn farve
-                    – jo tættere
-                    at færdes i.
-        
-                    Vores o-kort opdateres løbende, og vi har o-kort over mange områder af Rold Skov foruden flere mindre
-                    private skove og
-                    offentlige parker. Men også o-kort over både Skørping, Støvring og Terndrup, som vi bruger til
-                    by-orientering.</p>
-                <button><a href="#">links til tidligere kort</a></button>
-            </article>
-        </section>
+        </article>
+      </section>
     </main>
-    <footer>
-
-    </footer>
-</body>
-
+    <footer></footer>
+  </body>
 </html>

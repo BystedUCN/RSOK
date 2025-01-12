@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kontakt</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
@@ -12,164 +12,222 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="headerLogo">
-          <a href="./index.html"><img src="./assets/img/logo.png" alt="Rold Skov OK logo"></a><a href="./index.html"><em><H1>Rold Skov Orienteringsklub</H1></em></a>
+      <div class="headerLogo">
+        <a href="./index.html"
+          ><img src="./assets/img/logo/logo.png" alt="Rold Skov OK logo" /></a
+        ><a href="./index.html"
+          ><em><h1>Rold Skov Orienteringsklub</h1></em></a
+        >
+      </div>
+      <nav>
+        <div class="dropdown">
+          <input type="checkbox" id="checkbox-burgerMenu" />
+          <label for="checkbox-burgerMenu"
+            ><i class="fa-solid fa-bars"></i
+          ></label>
+          <ul>
+            <li><a href="./news.html">Nyheder</a></li>
+            <li><a href="./newMember.html">Ny til O-Løb?</a></li>
+            <li>
+              <div class="insideDropdown">
+                <input type="checkbox" id="checkbox-teams" />
+                <label for="checkbox-teams">Hold ▼</label>
+                <ul>
+                  <li><a href="./teams.html">General træning</a></li>
+                  <li><a href="./family.html">Familie</a></li>
+                  <li><a href="./kidsAndTeens.html">Børn og unge</a></li>
+                  <li><a href="./adult.html">Voksne</a></li>
+                  <li><a href="./senior.html">Senior</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="./signUp.html">Indmeldelse</a></li>
+            <li>
+              <div class="insideDropdown">
+                <input type="checkbox" id="checkbox-praktiskInfo" />
+                <label for="checkbox-praktiskInfo">Praktisk info ▼</label>
+                <ul>
+                  <li><a href="./map.html">O-Kort</a></li>
+                  <li><a href="#">Startsteder</a></li>
+                  <li><a href="#">Fakta, konti, mv.</a></li>
+                  <li><a href="#">Banelægger instruks</a></li>
+                  <li><a href="#">Træningsløbskort</a></li>
+                  <li><a href="#">Find vej syd for skørping skole</a></li>
+                  <li><a href="#">Find vej deruda</a></li>
+                  <li><a href="#">Vedtægter</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="./contact.html">Kontakt</a></li>
+            <li>
+              <div class="insideDropdown">
+                <input type="checkbox" id="checkbox-medlemssider" />
+                <label for="checkbox-medlemssider">Medlemssider ▼</label>
+                <ul>
+                  <li><a href="#">Log ind</a></li>
+                  <li><a href="#">Referater</a></li>
+                  <li><a href="#">O-Teknisk træning</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
         </div>
-          <nav>
-            <div class="dropdown">
-              <input type="checkbox" id="checkbox-burgerMenu" />
-              <label for="checkbox-burgerMenu"><i class="fa-solid fa-bars"></i></label>
-              <ul>
-                <li><a href="./news.html">Nyheder</a></li>
-                <li><a href="./newMember.html">Ny til O-Løb?</a></li>
-                <li>
-                  <div class="insideDropdown">
-                    <input type="checkbox" id="checkbox-teams">
-                    <label for="checkbox-teams">Hold ▼</label>
-                    <ul>
-                      <li><a href="./teams.html">General træning</a></li>
-                      <li><a href="./family.html">Familie</a></li>
-                      <li><a href="./kidsAndTeens.html">Børn og unge</a></li>
-                      <li><a href="./adult.html">Voksne</a></li>
-                      <li><a href="./senior.html">Senior</a></li>
-                    </ul>
-                  </div>
-                  </li>
-                  <li><a href="./signUp.html">Indmeldelse</a></li>
-                  <li>
-                  <div class="insideDropdown">
-                    <input type="checkbox" id="checkbox-praktiskInfo">
-                    <label for="checkbox-praktiskInfo">Praktisk info ▼</label>
-                    <ul>
-                      <li><a href="./map.html">O-Kort</a></li>
-                      <li><a href="#">Startsteder</a></li>
-                      <li><a href="#">Fakta, konti, mv.</a></li>
-                      <li><a href="#">Banelægger instruks</a></li>
-                      <li><a href="#">Træningsløbskort</a></li>
-                      <li><a href="#">Find vej syd for skørping skole</a></li>
-                      <li><a href="#">Find vej deruda</a></li>
-                      <li><a href="#">Vedtægter</a></li>
-                    </ul>
-                  </div>
-                </li>
-                  <li><a href="./contact.html">Kontakt</a></li>
-                  <li>
-                    <div class="insideDropdown">
-                      <input type="checkbox" id="checkbox-medlemssider">
-                      <label for="checkbox-medlemssider">Medlemssider ▼</label>
-                      <ul>
-                        <li><a href="#">Log ind</a></li>
-                        <li><a href="#">Referater</a></li>
-                        <li><a href="#">O-Teknisk træning</a></li>
-                      </ul>
-                    </div>
-                  </li>
-              </ul>
-            </div>
-          </nav>
-        </header>
+      </nav>
+    </header>
     <main>
-        <div class="breadCrumbs">
-            <a href="#">Forside</a>
-            <p>></p>
-            <a href="./contact.html">Kontakt</a>
-          </div>
-       
-        <h2 class="contactHeader">Bestyrelse</h2>
-        <section class="contact">
-            <article class="contactCards">
-            <h3>Helge Søgaard</h3>
-            <p>Formand/Ugebrevet <br>Telefon: <br>40 61 57 61 <br>E-mail: <br>formanden@roldskovok.dk</p>
-            </article>
-            <article class="contactCards">
-            <h3>Helmut Hilden</h3>
-            <p>Næstormand/Stævneudvalg <br>Telefon: <br>22 86 25 37 <br>E-mail: <br>helmuthilden@roldskovok.dk</p>
-            </article>
-            <article class="contactCards">
-                <h3>Michael Niss</h3>
-                <p>Kasserer/Teknisk Support <br>Telefon: <br>51 90 59 07 <br>E-mail: <br>support@roldskovok.dk</p>
-            </article>
-            <article class="contactCards">
-                <h3>Orla Vitting</h3>
-                <p>Kasserer/Vedligehold/Klubhus <br>Telefon: <br>40 34 33 35 <br>E-mail: <br>aovitting@hotmail.com</p>
-            </article>
-            <article class="contactCards">
-                <h3>Walther Rahbek</h3>
-                <p>Kasserer/Skovudvalg/Ugebrev <br>Telefon: <br>50 36 40 42 <br>E-mail: <br>wm@hasseris-gym.dk</p>
-            </article>
-            <article class="contactCards">
-                <h3>Mette Byskov</h3>
-                <p>Kasserer/Børn- og ungeudvalg <br>Telefon: <br>25 14 40 03 <br>E-mail: <br>mette.byskov@live.dk</p>
-            </article>
-            </section>
-            <h2 class="contactHeader">Kontaktpersoner</h2>
-            <section class="contact">
-                <article class="contactCards">
-                    <h3>Kirsten K. Andersen</h3>
-                    <p>Kortsalg <br>Telefon: <br>- <br>E-mail: <br>-</p>
-                    </article>
-                    <article class="contactCards">
-                    <h3>Marianne Brams</h3>
-                    <p>RSOK’er koordinator <br>Telefon: <br>61 70 39 80 <br>E-mail: <br>fambramspc@gmail.com</p>
-                    </article>
-                    <article class="contactCards">
-                        <h3>Michael Niss</h3>
-                        <p>Kasserer/Teknisk Support <br>Telefon: <br>51 90 59 07 <br>E-mail: <br>support@roldskovok.dk</p>
-                    </article>
-            </section>
-            <h2 class="contactHeader">Bestyrelse</h2>
-            <section class="contact">
-                <article class="contactCards">
-                    <h3>Laura Bobach</h3>
-                    <p>Presse og facebook <br>Telefon: <br>22 33 53 02 <br>E-mail: <br>laura@bobach.name</p>
-                </article>
-                <article class="contactCards">
-                    <h3>Orla Vitting</h3>
-                    <p>Kasserer/Vedligehold/Klubhus <br>Telefon: <br>40 34 33 35 <br>E-mail: <br>aovitting@hotmail.com</p>
-                </article>
-                <article class="contactCards">
-                    <h3>Helmut Hilden</h3>
-                    <p>Næstormand/Stævneudvalg <br>Telefon: <br>22 86 25 37 <br>E-mail: <br>helmuthilden@roldskovok.dk</p>
-                </article>
-                <article class="contactCards">
-                    <h3>Nicolai Vangsgaard</h3>
-                    <p>Stævneudvalg/Kortudvalg <br>Telefon: <br>- <br>E-mail: <br>-</p>
-                </article>
-                <article class="contactCards">
-                    <h3>Otto Møller</h3>
-                    <p>Stævneudvalg/Skovudvalg <br>Telefon: <br>- <br>E-mail: <br>-</p>
-                </article>
-                <article class="contactCards">
-                    <h3>Mette R. Håkansson</h3>
-                    <p>Økonomiudvalg <br>Telefon: <br>22 24 83 24 <br>E-mail: <br>meha@royalgreenland.com</p>
-                </article>
-                <article class="contactCards">
-                    <h3>Mette Byskov</h3>
-                    <p>Kasserer/Børn- og ungeudvalg <br>Telefon: <br>25 14 40 03 <br>E-mail: <br>mette.byskov@live.dk</p>
-                </article>
-                <article class="contactCards">
-                    <h3>Walther Rahbek</h3>
-                    <p>Kasserer/Skovudvalg/Ugebrev <br>Telefon: <br>50 36 40 42 <br>E-mail: <br>wm@hasseris-gym.dk</p>
-                </article>
-                <article class="contactCards">
-                    <h3>Jan Christiansen</h3>
-                    <p>Kortudvalg <br>Telefon: <br>- <br>E-mail: <br>-</p>
-                </article>
-                <article class="contactCards">
-                    <h3>Johan MacLassen</h3>
-                    <p>Kortudvalg/Klubtøj <br>Telefon: <br>- <br>E-mail: <br>-</p>
-                </article>
-                <article class="contactCards">
-                    <h3>Helge Søgaard</h3>
-                    <p>Formand/Ugebrevet <br>Telefon: <br>40 61 57 61 <br>E-mail: <br>formanden@roldskovok.dk</p>
-                    </article>
-                </section>
+      <img
+        src="./assets/img/header/contactHeaderImg.jpg"
+        alt="Medlemmer fra Rold Skov Orienteringsklub"
+        class="headerImg mobileNone"
+      />
+      <div class="breadCrumbs">
+        <a href="./index.html">Forside</a>
+        <p>></p>
+        <a href="./contact.html">Kontakt</a>
+      </div>
+
+      <h2 class="contactHeader">Bestyrelse</h2>
+      <section class="contact">
+        <article class="contactCards">
+          <h3>Helge Søgaard</h3>
+          <p>
+            Formand/Ugebrevet <br />Telefon: <br />40 61 57 61 <br />E-mail:
+            <br />formanden@roldskovok.dk
+          </p>
+        </article>
+        <article class="contactCards">
+          <h3>Helmut Hilden</h3>
+          <p>
+            Næstormand/Stævneudvalg <br />Telefon: <br />22 86 25 37
+            <br />E-mail: <br />helmuthilden@roldskovok.dk
+          </p>
+        </article>
+        <article class="contactCards">
+          <h3>Michael Niss</h3>
+          <p>
+            Kasserer/Teknisk Support <br />Telefon: <br />51 90 59 07
+            <br />E-mail: <br />support@roldskovok.dk
+          </p>
+        </article>
+        <article class="contactCards">
+          <h3>Orla Vitting</h3>
+          <p>
+            Kasserer/Vedligehold/Klubhus <br />Telefon: <br />40 34 33 35
+            <br />E-mail: <br />aovitting@hotmail.com
+          </p>
+        </article>
+        <article class="contactCards">
+          <h3>Walther Rahbek</h3>
+          <p>
+            Kasserer/Skovudvalg/Ugebrev <br />Telefon: <br />50 36 40 42
+            <br />E-mail: <br />wm@hasseris-gym.dk
+          </p>
+        </article>
+        <article class="contactCards">
+          <h3>Mette Byskov</h3>
+          <p>
+            Kasserer/Børn- og ungeudvalg <br />Telefon: <br />25 14 40 03
+            <br />E-mail: <br />mette.byskov@live.dk
+          </p>
+        </article>
+      </section>
+      <h2 class="contactHeader">Kontaktpersoner</h2>
+      <section class="contact">
+        <article class="contactCards">
+          <h3>Kirsten K. Andersen</h3>
+          <p>Kortsalg <br />Telefon: <br />- <br />E-mail: <br />-</p>
+        </article>
+        <article class="contactCards">
+          <h3>Marianne Brams</h3>
+          <p>
+            RSOK’er koordinator <br />Telefon: <br />61 70 39 80 <br />E-mail:
+            <br />fambramspc@gmail.com
+          </p>
+        </article>
+        <article class="contactCards">
+          <h3>Michael Niss</h3>
+          <p>
+            Kasserer/Teknisk Support <br />Telefon: <br />51 90 59 07
+            <br />E-mail: <br />support@roldskovok.dk
+          </p>
+        </article>
+      </section>
+      <h2 class="contactHeader">Bestyrelse</h2>
+      <section class="contact">
+        <article class="contactCards">
+          <h3>Laura Bobach</h3>
+          <p>
+            Presse og facebook <br />Telefon: <br />22 33 53 02 <br />E-mail:
+            <br />laura@bobach.name
+          </p>
+        </article>
+        <article class="contactCards">
+          <h3>Orla Vitting</h3>
+          <p>
+            Kasserer/Vedligehold/Klubhus <br />Telefon: <br />40 34 33 35
+            <br />E-mail: <br />aovitting@hotmail.com
+          </p>
+        </article>
+        <article class="contactCards">
+          <h3>Helmut Hilden</h3>
+          <p>
+            Næstormand/Stævneudvalg <br />Telefon: <br />22 86 25 37
+            <br />E-mail: <br />helmuthilden@roldskovok.dk
+          </p>
+        </article>
+        <article class="contactCards">
+          <h3>Nicolai Vangsgaard</h3>
+          <p>
+            Stævneudvalg/Kortudvalg <br />Telefon: <br />- <br />E-mail: <br />-
+          </p>
+        </article>
+        <article class="contactCards">
+          <h3>Otto Møller</h3>
+          <p>
+            Stævneudvalg/Skovudvalg <br />Telefon: <br />- <br />E-mail: <br />-
+          </p>
+        </article>
+        <article class="contactCards">
+          <h3>Mette R. Håkansson</h3>
+          <p>
+            Økonomiudvalg <br />Telefon: <br />22 24 83 24 <br />E-mail:
+            <br />meha@royalgreenland.com
+          </p>
+        </article>
+        <article class="contactCards">
+          <h3>Mette Byskov</h3>
+          <p>
+            Kasserer/Børn- og ungeudvalg <br />Telefon: <br />25 14 40 03
+            <br />E-mail: <br />mette.byskov@live.dk
+          </p>
+        </article>
+        <article class="contactCards">
+          <h3>Walther Rahbek</h3>
+          <p>
+            Kasserer/Skovudvalg/Ugebrev <br />Telefon: <br />50 36 40 42
+            <br />E-mail: <br />wm@hasseris-gym.dk
+          </p>
+        </article>
+        <article class="contactCards">
+          <h3>Jan Christiansen</h3>
+          <p>Kortudvalg <br />Telefon: <br />- <br />E-mail: <br />-</p>
+        </article>
+        <article class="contactCards">
+          <h3>Johan MacLassen</h3>
+          <p>Kortudvalg/Klubtøj <br />Telefon: <br />- <br />E-mail: <br />-</p>
+        </article>
+        <article class="contactCards">
+          <h3>Helge Søgaard</h3>
+          <p>
+            Formand/Ugebrevet <br />Telefon: <br />40 61 57 61 <br />E-mail:
+            <br />formanden@roldskovok.dk
+          </p>
+        </article>
+      </section>
     </main>
-    <footer>
-        
-    </footer>
-</body>
+    <footer></footer>
+  </body>
 </html>
