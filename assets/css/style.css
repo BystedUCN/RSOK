@@ -409,19 +409,29 @@ footer {
     padding: var(--mobileSmSpacer);
 }
 
-footer a, p, h4 {
-    color: white;
+footer{
     margin: 0;
     line-height: 150%;
 }
 
 footer h4 {
     font-size: 10px;
+    color: white;
+    margin: 0;
 }
 
-footer a, p {
+footer a {
     font-size: 8px;
+    color: white;
+    margin: 0;
 }
+
+footer p {
+    font-size: 8px;
+    color: white;
+    margin: 0;
+}
+
 .fa-facebook, .fa-square-instagram {
     color: var(--clearSky);
     font-size: 35px;
@@ -456,4 +466,114 @@ hr {
 
 .politics a {
     margin: var(--tinySpacer);
+}
+
+
+
+
+
+
+@media (min-width: 700px) {
+    /* general styling */
+
+main {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 0;
+}
+
+
+ /* Her ligger navigationsbarens CSS */
+ .headerLogo {
+    height: 150px;
+    width: 100%;
+}
+
+header img {
+    width: 120px;
+    height: auto;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+nav {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    a
+}
+
+nav label:nth-of-type(1){
+    display: none;
+}
+
+.dropdown ul {
+    display: contents;
+    border: none;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.dropdown ul li {
+    border: none;
+    padding: 0;
+    text-align: center;
+    border-radius: 0;
+    align-items: center;
+}
+
+.dropdown ul li a {
+    font-size: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.headerImg {
+    display: block;
+    justify-self: center;
+}
+
+.breadCrumbs {
+    margin-top: 12px;
+}
+
+.breadCrumbs a {
+    font-size: 18px;
+    margin-left: 15px;
+}
+
+section {
+    max-width: 75ch;
+    justify-self: center;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+p {
+    font-size: 20px;
+    line-height: 150%;
+}
+
 }
