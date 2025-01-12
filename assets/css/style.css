@@ -39,11 +39,11 @@ main {
 
 /* Mobil opsætning først */
 /* Her ligger CSS for vores navigationsbar */
-header{
+/* header{
     position: sticky;
     top: 0;
     z-index: 1;
-}
+} */
 
 .headerLogo {
     background: var(--fernLeaf);
@@ -165,6 +165,7 @@ input[type=checkbox]:checked~ul {
     margin-bottom: 12px;
     display: flex;
     text-align: center;
+    height: 15px;
 }
 
 h2 {
@@ -234,7 +235,7 @@ h3 {
     margin-bottom: var(--medSpacer);
 }
 
-.newsletter {
+.form {
     background-color: var(--freshMint);
     border-radius: 6px;
 padding: var(--smSpacer);
@@ -357,4 +358,37 @@ form input{
     margin-bottom: 14px;
     font-size: 11px;
     line-height: 150%;
+}
+
+.mobileShow {
+    width: 100%;
+    margin-bottom: var(--medSpacer);
+    border-radius: 6px;
+}
+
+.quota{
+    background: var(--paleStone);
+    padding: var(--mobileSmSpacer);
+    border-radius: 6px;
+    justify-self: center;
+    min-width: 350px;
+    max-width: 400px;
+}
+
+.quota div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.quota p {
+    margin-bottom: 0;
+    line-height: 250%;
+}
+
+.quota p:nth-child(2) {
+    text-align: center;
+}
+
+.signUp {
+    margin-top: var(--medSpacer);
 }
