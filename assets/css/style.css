@@ -585,17 +585,18 @@ nav li:hover {
 }
 
 section {
-    max-width: 75ch;
     justify-self: center;
 }
 
 h2 {
     font-size: 32px;
+    
 }
 
 p {
     font-size: 20px;
     line-height: 150%;
+    max-width: 75ch;
 }
 
 .mobileNone {
@@ -630,6 +631,7 @@ p {
 .cards {
     display: flex;
     justify-content: center;
+    max-width: 100%;
 }
 
 .teamCards {
@@ -672,5 +674,43 @@ p {
     margin-bottom: var(--smSpacer);
     height: 30px;
     width: 400px;
+}
+
+/* Her ligger footer kodningen */
+footer {
+    height: 455px;
+    padding: 10px 100px;
+}
+
+footer img {
+    height: 125px;
+    width: auto;
+}
+
+footer p {
+font-size: 20px;
+line-height: 150%;
+}
+
+footer a {
+    font-size: 20px;
+    line-height: 150%;
+}
+
+footer h4 {
+    font-size: 24px;
+    line-height: 150%;
+}
+
+.footerLink {
+    width: 100%;
+}
+
+.footerLogo .fa-brands {
+    font-size: 75px;
+}
+
+footer hr {
+    width: 550px;
 }
 }
