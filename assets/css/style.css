@@ -148,8 +148,6 @@ input[type=checkbox]:checked~ul {
     display: block;
 }
 
-
-
 /* Her er anden kode :P */
 .mobileNone {
     display: none;
@@ -242,8 +240,8 @@ padding: var(--smSpacer);
 }
 
 form{
-    display: flex;
-        flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(1fr, 90%, 1fr);
         justify-content: center;
         align-items: center;
         padding-bottom: var(--tinySpacer);
@@ -393,6 +391,10 @@ form input{
     margin-top: var(--medSpacer);
 }
 
+.signUp label {
+position: relative;
+}
+
 .headerImg {
     width: 100%;
     border-radius: 6px;
@@ -473,7 +475,7 @@ hr {
 
 
 
-@media (min-width: 700px) {
+@media (min-width: 1100px) {
     /* general styling */
 
 main {
@@ -501,34 +503,71 @@ h1 {
 nav {
     height: 50px;
     width: 100%;
+    /* padding: 10px; */
     display: flex;
-    a
+    justify-content: space-around;
 }
 
-nav label:nth-of-type(1){
+.burgerMenu{
     display: none;
 }
 
 .dropdown ul {
-    display: contents;
-    border: none;
+    position: relative;
     display: flex;
-    justify-content: space-around;
-    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .dropdown ul li {
     border: none;
-    padding: 0;
+    padding: 9px;
     text-align: center;
-    border-radius: 0;
-    align-items: center;
+    border-radius: 6px;
+    
 }
 
 .dropdown ul li a {
     font-size: 1rem;
 }
 
+.dropdown ul li label {
+    font-size: 1rem;
+}
+
+.insideDropdown ul {
+    display: none;
+    position: absolute;
+    top: 34px;
+}
+
+.teamNav {
+    transform: translateX(-180px);
+}
+
+.mapNav {
+    transform: translateX(-150px);
+}
+
+.memberNav {
+    transform: translateX(-145px);
+}
+
+
+
+.insideDropdown ul li {
+    padding: var(--mobileSmSpacer);
+    border: solid #2E4600 0.5px;
+    border-radius: 6px;
+}
+
+.insideDropdown label {
+    display: contents;
+}
+
+nav li:hover {
+    background: var(--fernLeaf);
+}
 
 
 
