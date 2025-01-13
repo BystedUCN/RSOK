@@ -473,7 +473,7 @@ hr {
 
 
 
-
+/* Desktop styling */
 
 @media (min-width: 1100px) {
     /* general styling */
@@ -614,6 +614,7 @@ p {
     height: auto;
     margin: var(--medSpacer);
     position: relative;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
 }
 
 .infoCards p {
@@ -652,10 +653,24 @@ p {
     margin-block: var(--smSpacer);
 }
 
+.form {
+    field-sizing: content;
+    min-width: 100vw;
+    padding-inline: 320px;
+}
 
 
+.form p {
+    text-align: center;
+}
 
+.form h3{
+    text-align: center;
+}
 
-
-
+.form input {
+    margin-bottom: var(--smSpacer);
+    height: 30px;
+    width: 400px;
+}
 }
