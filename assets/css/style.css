@@ -479,8 +479,7 @@ hr {
     /* general styling */
 
 main {
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-inline: 100px;
     margin-top: 0;
 }
 
@@ -571,22 +570,6 @@ nav li:hover {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .headerImg {
     display: block;
     justify-self: center;
@@ -614,5 +597,65 @@ p {
     font-size: 20px;
     line-height: 150%;
 }
+
+.mobileNone {
+    display: block;
+    max-width: 100%;
+    border-radius: 6px;
+}
+
+.memberCards {
+    max-width: 900px;
+    display: flex;
+}
+
+.infoCards {
+    width: 400px;
+    height: auto;
+    margin: var(--medSpacer);
+    position: relative;
+}
+
+.infoCards p {
+    font-size: 1rem;
+    max-width: 380px;
+}
+
+.infoCards a {
+    position: absolute;
+    bottom: 10px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+}
+
+.teamCards {
+    background: var(--paleStone);
+    border-radius: 6px;
+    max-width: 295px;
+    display: grid;
+    grid-template-rows: repeat(2);
+    justify-content: center;
+    padding: var(--mobileSmSpacer);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.teamCards img {
+    max-width: 240px;
+    height: auto;
+    margin-bottom: var(--smSpacer);
+}
+
+.teamCards a {
+    margin-block: var(--smSpacer);
+}
+
+
+
+
+
+
 
 }
