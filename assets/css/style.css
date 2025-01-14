@@ -598,17 +598,18 @@ nav li:hover {
 }
 
 section {
-    max-width: 75ch;
     justify-self: center;
 }
 
 h2 {
     font-size: 32px;
+    
 }
 
 p {
     font-size: 20px;
     line-height: 150%;
+    max-width: 75ch;
 }
 
 .mobileNone {
@@ -642,6 +643,7 @@ p {
 .cards {
     display: flex;
     justify-content: center;
+    max-width: 100%;
 }
 
 .teamCards {
