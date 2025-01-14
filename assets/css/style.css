@@ -46,7 +46,7 @@ main {
 } */
 
 .headerLogo {
-    background: var(--fernLeaf);
+    background: var(--freshMint);
     height: 68px;
     width: 100%;
     display: flex;
@@ -64,7 +64,7 @@ h1 {
     font-size: 16px;
     font-weight: 700;
     color: black;
-    text-shadow: -4px 4px 4px var(--deepForest);
+    text-shadow: -4px 4px 10px var(--deepForest);
     margin: 15px;
 }
 
@@ -73,7 +73,7 @@ header a{
 }
 
 nav {
-    background: var(--freshMint);
+    background: var(--fernLeaf);
     height: 32px;
     width: 100%;
     display: flex;
@@ -103,14 +103,15 @@ input[type=checkbox] {
     z-index: 1;
     margin: 0;
     padding: 0;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
 }
 
 .dropdown ul li {
     padding: var(--smSpacer);
-    background-color: var(--freshMint);
-    border: .2px solid var(--fernLeaf);
-    border-radius: 6px;
     width: 150px;
+    background-color: var(--fernLeaf);
+    border-top: .2px solid var(--deepForest);
+    
 }
 
 
@@ -119,8 +120,15 @@ input[type=checkbox] {
     font-size: 12px;
 }
 
+.insideDropdown ul li {
+    /* border-left: .2px solid var(--deepForest); */
+    background-color: var(--freshMint);
+    border-top: .2px solid var(--fernLeaf);
+}
+
 .insideDropdown {
     position: relative;
+    
 }
 
 .insideDropdown:nth-child(1) {
@@ -133,8 +141,8 @@ input[type=checkbox] {
 
 .insideDropdown ul {
     position: absolute;
-    left: 134px;
-    top: -15px;
+    left: 135px;
+    top: -16px;
 }
 
 /**
@@ -479,8 +487,8 @@ hr {
     /* general styling */
 
 main {
-    margin-inline: 100px;
-    margin-top: 0;
+    margin: 0;
+    padding-bottom: var(--medSpacer);
 }
 
 
@@ -493,6 +501,7 @@ main {
 header img {
     width: 120px;
     height: auto;
+    border-radius: 0px;
 }
 
 h1 {
@@ -516,13 +525,13 @@ nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    box-shadow: none;
 }
 
 .dropdown ul li {
     border: none;
     padding: 9px;
     text-align: center;
-    border-radius: 6px;
     
 }
 
@@ -538,6 +547,7 @@ nav {
     display: none;
     position: absolute;
     top: 34px;
+    
 }
 
 .teamNav {
@@ -556,8 +566,7 @@ nav {
 
 .insideDropdown ul li {
     padding: var(--mobileSmSpacer);
-    border: solid #2E4600 0.5px;
-    border-radius: 6px;
+    border-top: 0.2px solid var(--deepForest);
 }
 
 .insideDropdown label {
@@ -565,14 +574,18 @@ nav {
 }
 
 nav li:hover {
+    background: var(--freshMint);
+    transition: 0.3s;
+}
+.insideDropdown li:hover {
     background: var(--fernLeaf);
 }
-
 
 
 .headerImg {
     display: block;
     justify-self: center;
+    border-radius: 0px;
 }
 
 .breadCrumbs {
@@ -600,8 +613,7 @@ p {
 
 .mobileNone {
     display: block;
-    max-width: 100%;
-    border-radius: 6px;
+    max-width: 100%
 }
 
 .memberCards {
@@ -655,8 +667,9 @@ p {
 
 .form {
     field-sizing: content;
-    min-width: 100vw;
+    min-width: 100%;
     padding-inline: 320px;
+    border-radius: 0px;
 }
 
 
@@ -672,5 +685,43 @@ p {
     margin-bottom: var(--smSpacer);
     height: 30px;
     width: 400px;
+}
+/* Her ligger footer kodningen */
+footer {
+    height: auto;
+    width: 100%;
+    padding: 10px 100px;
+}
+
+footer img {
+    height: 125px;
+    width: auto;
+}
+
+footer p {
+    font-size: 20px;
+    line-height: 150%;
+}
+
+footer a {
+    font-size: 20px;
+    line-height: 150%;
+}
+
+footer h4 {
+    font-size: 24px;
+    line-height: 150%;
+}
+
+.footerLink {
+    width: 100%;
+}
+
+.footerLogo .fa-brands {
+    font-size: 75px;
+}
+
+footer hr {
+    width: 550px;
 }
 }
