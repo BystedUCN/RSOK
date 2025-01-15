@@ -81,7 +81,7 @@ header a{
 /* Her sætter vi farve og størrelse på det nederste af vores navigation, og sætter tingene i midten på den horisontale. Vi har udkommenteret justify-conten, da det ligger menuen over til højre og når vi så viser resten af listen gemmer det sig udenfor siden.  */
 nav {
     background: var(--fernLeaf);
-    height: 32px;
+    height: 50px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -90,7 +90,7 @@ nav {
 
 /* Her sætter vi størrelsen for vores SVG burger menu */
 .fa-bars {
-    font-size: 15px;
+    font-size: 35px;
     margin: 8.38px;
 }
 
