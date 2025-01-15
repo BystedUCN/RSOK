@@ -121,7 +121,6 @@ input[type=checkbox] {
 }
 
 .insideDropdown ul li {
-    /* border-left: .2px solid var(--deepForest); */
     background-color: var(--freshMint);
     border-top: .2px solid var(--fernLeaf);
 }
@@ -168,10 +167,15 @@ input[type=checkbox]:checked~ul {
 }
 
 .breadCrumbs {
-    margin-bottom: 12px;
+    margin-block: 12px;
+    margin-left: 10px;
     display: flex;
     text-align: center;
     height: 15px;
+}
+
+.breadCrumbs a {
+    text-decoration: underline;
 }
 
 h2 {
@@ -687,6 +691,32 @@ p {
     margin-bottom: var(--smSpacer);
     height: 30px;
     width: 400px;
+}
+
+.button {
+    transition: 0.2s;
+}
+
+.button:hover {
+    transform: scale(1.1) perspective(1px);
+}
+
+.frontContainer {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: var(--lrgSpacer);
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.leftContainer {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.rightSide {
+    width: 30%;
 }
 /* Her ligger footer kodningen */
 footer {
