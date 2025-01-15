@@ -707,6 +707,7 @@ p {
     padding-inline: var(--lrgSpacer);
     max-width: 90%;
     margin: 0 auto;
+    flex-direction: row-reverse;
 }
 
 .leftContainer {
@@ -717,6 +718,16 @@ p {
 
 .rightSide {
     width: 30%;
+}
+
+.membership {
+    display: flex;
+    justify-content: space-between;
+}
+
+.membershipText {
+    padding-right: var(--lrgSpacer);
+    padding-top: var(--medSpacer);
 }
 /* Her ligger footer kodningen */
 footer {
