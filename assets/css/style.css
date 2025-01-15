@@ -39,12 +39,15 @@ main {
 
 /* Mobil opsætning først */
 /* Her ligger CSS for vores navigationsbar */
+
+/* Vi ville gerne have haft at vores navigation var sticky da vi for mobilerne har lidt lange sider, men det kunne desværre ikke lade sig gøre, da der så ikke var mulighed for at se hele navigationsbaren */
 /* header{
     position: sticky;
     top: 0;
     z-index: 1;
 } */
 
+/* Her arbebjder vi på den øverste del af navigationsbaren, hvor vi sætter en størrelsen på navigationsbaren hvor logoet og h1 ligger inde og sørger for at tingene ligger i midten.*/
 .headerLogo {
     background: var(--freshMint);
     height: 68px;
@@ -54,11 +57,13 @@ main {
     justify-content: center;
 }
 
+/* Her sætter vi størrelsen på logo billedet */
 header img {
     width: 50px;
     height: auto;
 }
 
+/* Her styler vi h1 */
 h1 {
     font-size: 16px;
     font-weight: 700;
@@ -68,10 +73,12 @@ h1 {
     font-style: italic;
 }
 
+/* Her sætter vi tekst dekorationen til ingen da vores h1 ligger inde i et a/link kommer der en streg under som bliver fjernet når vi skriver css'en som følgende */
 header a{
     text-decoration: none;
 }
 
+/* Her sætter vi farve og størrelse på det nederste af vores navigation, og sætter tingene i midten på den horisontale. Vi har udkommenteret justify-conten, da det ligger menuen over til højre og når vi så viser resten af listen gemmer det sig udenfor siden.  */
 nav {
     background: var(--fernLeaf);
     height: 32px;
@@ -81,20 +88,21 @@ nav {
     /* justify-content: flex-end; */
 }
 
+/* Her sætter vi størrelsen for vores SVG burger menu */
 .fa-bars {
     font-size: 15px;
     margin: 8.38px;
 }
 
 /**
-    Her gemmer vi checkboksen, så den lille checkboks ikke viser sig.
+    Da navigationen er lavet ved hjælp af checkbokse, viser den automatisk en lille checkboks ved siden af SVG'en som vi her siger den ikke sakl vise sig.
 */
 
 input[type=checkbox] {
     display: none;
 }
 
-/*  Vi vil ikke have at ul bliver vist når checkboksen ikke er tjekket, derfor vil vi sætte den til display none, vi laver en position absolout så den ligger sig i forhold til sit forældre element.*/
+/*  Vi vil ikke have at ul bliver vist når checkboksen ikke er tjekket, derfor vil vi sætte den til display none, vi laver en position absolout så den ligger sig i forhold til sit forældre element. samtidig har vi puttet en skygge på så den ikke blender sig i med baggrunden.*/
 
 .dropdown ul {
     display: none;
@@ -106,6 +114,7 @@ input[type=checkbox] {
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
 }
 
+/* Her styler vi vores liste elementer med størrelse og farve og hvilken kant de skal have.*/
 .dropdown ul li {
     padding: var(--smSpacer);
     width: 150px;
@@ -114,30 +123,29 @@ input[type=checkbox] {
     
 }
 
-
+/* Her fortæller vi vores a/links i dropdown at den skal være sort i stedet for sin deafault blå farve samt sætter en skriftstørrelse. */
 .dropdown ul li a {
-    color: inherit;
+    color: black;
     font-size: 12px;
 }
 
+/* Her sætter vi en farve for vores dropdown på level 2 altså dem der ligger inden i dropdownen og sætter en kant. */
 .insideDropdown ul li {
     background-color: var(--freshMint);
     border-top: .2px solid var(--fernLeaf);
 }
 
+/* Vi laver inside dropdown relative da vi gerne vil flytte på navigationsbaren, men ikke har mulighed for at lægge den hvor vi gerne vil, det kan vi nu, da vi kan rykke den som det passer os. */
 .insideDropdown {
     position: relative;
-    
 }
 
-.insideDropdown:nth-child(1) {
-    display: inline-block;
-}
-
+/* Her sætter vi tekst størrelsen på labelsne i insideDropdown da de ikke er påvirket af tekst vi har ændret tidligere. */
 .insideDropdown label {
     font-size: 12px;
 }
 
+/* vi laver en position absolout så den ligger sig i forhold til sit forældre element og vi kan rykke det som vi gerne vil */
 .insideDropdown ul {
     position: absolute;
     left: 135px;
@@ -151,9 +159,13 @@ Alt efter hvad vi gerne vil ændre bruger vi "altid" input[type=checkbox]:checke
 
 */
 
+/* Så her siger den: Når checkboksen er cheket skal UL vise sig */
 input[type=checkbox]:checked~ul {
     display: block;
 }
+
+
+
 
 /* Her er anden kode :P */
 .mobileNone {
@@ -555,7 +567,7 @@ nav {
 }
 
 .teamNav {
-    transform: translateX(-180px);
+    transform: translateX(-150px);
 }
 
 .mapNav {
