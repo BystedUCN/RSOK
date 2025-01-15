@@ -57,7 +57,6 @@ main {
 header img {
     width: 50px;
     height: auto;
-    border-radius: 6px;
 }
 
 h1 {
@@ -166,6 +165,10 @@ input[type=checkbox]:checked~ul {
     font-size: 10px;
 }
 
+.breadCrumbs span {
+    font-size: 10px;
+}
+
 .breadCrumbs {
     margin-block: 12px;
     margin-left: 10px;
@@ -177,6 +180,7 @@ input[type=checkbox]:checked~ul {
 .breadCrumbs a {
     text-decoration: underline;
 }
+
 
 h2 {
     font-size: 1rem;
@@ -372,8 +376,7 @@ form input{
 
 .mobileShow {
     width: 100%;
-    margin-bottom: var(--medSpacer);
-    border-radius: 6px;
+    margin-block: var(--medSpacer);
 }
 
 .quota{
@@ -409,7 +412,6 @@ position: relative;
 
 .headerImg {
     width: 100%;
-    border-radius: 6px;
 }
 
 .map {
@@ -455,7 +457,6 @@ footer p {
 footer img {
     height: 35px;
     width: auto;
-    border-radius: 6px;
 }
 
 .footerLink {
@@ -601,13 +602,20 @@ nav li:hover {
     margin-left: 15px;
 }
 
+.breadCrumbs a {
+    margin: 0px;
+}
+
 section {
     justify-self: center;
 }
 
 h2 {
     font-size: 32px;
-    
+}
+
+h3 {
+    font-size: 24px;
 }
 
 p {
@@ -676,11 +684,14 @@ p {
     min-width: 100%;
     padding-inline: 320px;
     border-radius: 0px;
+    margin: 0 auto;
 }
 
 
 .form p {
     text-align: center;
+    margin: 0 auto;
+    padding-bottom: var(--smSpacer);
 }
 
 .form h3{
@@ -723,12 +734,101 @@ p {
 .membership {
     display: flex;
     justify-content: space-between;
+    padding-bottom: var(--medSpacer);
 }
 
 .membershipText {
     padding-right: var(--lrgSpacer);
     padding-top: var(--medSpacer);
 }
+
+.calender {
+    width: 100%;
+    height: auto;
+    border-radius: 0px;
+}
+
+.calender .days p{
+    padding-block: var(--medSpacer);
+    border-radius: 0px;
+    transition: 0.3s;
+}
+
+.calender p:hover{
+    background: var(--clearSky);
+}
+
+.map {
+    display: flex;
+    justify-content: space-between;
+}
+
+.map img {
+    
+    max-width: 100%;
+    height: auto;
+}
+
+figure {
+    display: block;
+}
+
+.mapContainer {
+    padding-inline: var(--lrgSpacer);
+    padding-top: var(--medSpacer);
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-bottom: var(--medSpacer);
+}
+
+.contactCards {
+    width: 300px;
+}
+
+.contactHeader {
+    text-align: center;
+}
+
+.contactCards p {
+    font-size: 16px;
+}
+
+.clubTeams {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.clubTeams img {
+    max-width: 40%;
+    height: auto;
+    border-radius: 0px;
+    object-fit: contain;
+}
+.clubTeamsContainer {
+    padding-inline: var(--lrgSpacer);
+}
+
+.mobileShow {
+    display: none;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+}
+
+.gallery img {
+    object-fit: contain;
+    max-width: 30%;
+    padding: var(--mobileSmSpacer);
+    padding-top: var(--medSpacer);
+}
+
+
 /* Her ligger footer kodningen */
 footer {
     height: auto;
