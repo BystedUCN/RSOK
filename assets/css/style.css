@@ -307,7 +307,6 @@ form input{
 
 .calender{
     background: var(--fernLeaf);
-    border-radius: 6px;
     padding: var(--mobileSmSpacer);
     margin-bottom: var(--medSpacer);
 }
@@ -342,7 +341,6 @@ form input{
     margin: 0;
     padding: var(--mobileSmSpacer);
     border: 0.5px solid black;
-    border-radius: 6px;
     background: var(--freshMint);
 }
 
