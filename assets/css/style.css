@@ -36,10 +36,36 @@ main {
     margin: 10px;
 }
 
+/* --- */
+/* --- */
+/* --- */
 
-/* Mobil opsætning først */
+/* Vi koder til mobil opsætningen først */
+/* Her ligger kodning for gennemgående elementer */
+h2 {
+    font-size: 1rem;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 13px;
+    margin-top: 0;
+    margin-bottom: var(--medSpacer)
+}
+
+h3 {
+    font-size: 14px;
+}
+
+.mobileNone {
+    display: none;
+}
+/* --- */
+/* --- */
+/* --- */
+
 /* Her ligger CSS for vores navigationsbar */
-
 /* Vi ville gerne have haft at vores navigation var sticky da vi for mobilerne har lidt lange sider, men det kunne desværre ikke lade sig gøre, da der så ikke var mulighed for at se hele navigationsbaren */
 /* header{
     position: sticky;
@@ -95,7 +121,7 @@ nav {
 }
 
 /**
-    Da navigationen er lavet ved hjælp af checkbokse, viser den automatisk en lille checkboks ved siden af SVG'en som vi her siger den ikke sakl vise sig.
+    Da navigationen er lavet ved hjælp af checkbokse, viser den automatisk en lille checkboks ved siden af SVG'en som vi her siger den ikke skal vise sig.
 */
 
 input[type=checkbox] {
@@ -168,11 +194,7 @@ input[type=checkbox]:checked~ul {
 /* --- */
 /* --- */
 
-/* Her er anden kode :P */
-.mobileNone {
-    display: none;
-}
-
+/* Her ligger kodning for breadcrumbs */
 .breadCrumbs a {
     color: hsl(0, 0%, 0%);
     opacity: 90%;
@@ -195,39 +217,11 @@ input[type=checkbox]:checked~ul {
     text-decoration: underline;
 }
 
+/* --- */
+/* --- */
+/* --- */
 
-h2 {
-    font-size: 1rem;
-    margin-top: 0px;
-    margin-bottom: 10px;
-}
-
-p {
-    font-size: 13px;
-    margin-top: 0;
-    margin-bottom: var(--medSpacer)
-}
-
-.infoCards {
-    background: var(--paleStone);
-    padding: var(--mobileSmSpacer);
-    border-radius: 6px;
-    margin-bottom: 25px;
-}
-
-.infoCards img {
-    max-width: 100%;
-    height: auto;
-}
-
-h3 {
-    font-size: 14px;
-}
-
-.infoCards p {
-    font-weight: 300;
-}
-
+/* Knap kodning */
 .buttonContainer {
     display: flex;
     justify-content: center;
@@ -248,6 +242,30 @@ h3 {
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
 }
 
+/* --- */
+/* --- */
+/* --- */
+
+/* Infocards kode */
+.infoCards {
+    background: var(--paleStone);
+    padding: var(--mobileSmSpacer);
+    border-radius: 6px;
+    margin-bottom: 25px;
+}
+
+.infoCards img {
+    max-width: 100%;
+    height: auto;
+}
+
+.infoCards p {
+    font-weight: 300;
+}
+
+/* --- */
+/* --- */
+/* --- */
 .centeredHeader {
     text-align: center;
 }
