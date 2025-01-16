@@ -484,7 +484,7 @@ footer p {
 }
 
 .fa-facebook, .fa-square-instagram {
-    color: var(--clearSky);
+    color: white;
     font-size: 35px;
     margin: var(--mobileSmSpacer);
 }
