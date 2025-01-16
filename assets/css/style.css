@@ -748,7 +748,7 @@ p {
 }
 
 .button:hover {
-    transform: scale(1.1) perspective(1px);
+    scale: 110%;
 }
 
 .frontContainer {
